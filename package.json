@@ -1,0 +1,55 @@
+{
+  "name": "notification-system",
+  "version": "1.0.0",
+  "description": "Advanced notification management system with pub-sub, queues, and real-time features",
+  "main": "dist/app.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/app.js",
+    "dev": "nodemon src/app.ts",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "migrate": "ts-node src/migrations/run.ts",
+    "seed": "ts-node src/seeders/run.ts"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.7.2",
+    "bull": "^4.11.5",
+    "ioredis": "^5.3.2",
+    "pg": "^8.11.3",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "nodemailer": "^6.9.7",
+    "twilio": "^4.19.0",
+    "handlebars": "^4.7.8",
+    "moment": "^2.29.4",
+    "winston": "^3.11.0",
+    "prom-client": "^14.2.0",
+    "joi": "^17.11.0",
+    "dotenv": "^16.3.1",
+    "cors": "^2.8.5",
+    "helmet": "^7.1.0",
+    "compression": "^1.7.4",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.7",
+    "@types/express": "^4.17.20",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/jsonwebtoken": "^9.0.5",
+    "@types/nodemailer": "^6.4.14",
+    "@types/jest": "^29.5.7",
+    "@types/cors": "^2.8.16",
+    "@types/compression": "^1.7.5",
+    "@types/uuid": "^9.0.6",
+    "typescript": "^5.2.2",
+    "ts-node": "^10.9.1",
+    "nodemon": "^3.0.1",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.1",
+    "supertest": "^6.3.3",
+    "@types/supertest": "^2.0.16"
+  }
+}
+
