@@ -6,7 +6,7 @@ export class Database {
 	private pool: Pool;
 
 	private constructor(){
-		this.pool = new Pool({config.database});
+		this.pool = new Pool(config.database);
 	}
 
 	public static getInstance():Database {

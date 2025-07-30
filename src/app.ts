@@ -45,7 +45,6 @@ class NotificationApp {
 
   async start(): Promise<void> {
     try {
-      this.logger.info("Connected to Redis");
 
       // Start server
       this.server.listen(config.port, () => {
