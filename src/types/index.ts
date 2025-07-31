@@ -100,3 +100,13 @@ export interface BackoffOptions {
   type: 'fixed' | 'exponential';
   delay: number;
 }
+
+export enum NotificationEvents {
+  NOTIFICATION_REQUESTED='notification.requested',
+  NOTIFICATION_PROCESSING='notification.processing',
+  NOTIFICATION_SENT='notification.sent',
+  NOTIFICATION_DELIVERED='notification.delivered',
+  NOTIFICATION_FAILED='notification.failed',
+  USER_PREFERENCES_UPDATED='user.preferences.updated',
+  TEMPLATE_UPDATED='template.updated'
+}
