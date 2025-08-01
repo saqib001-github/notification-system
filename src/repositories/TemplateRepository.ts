@@ -1,4 +1,3 @@
-// src/repositories/TemplateRepository.ts
 import { BaseRepository } from './BaseRepository';
 import { NotificationType } from '../types';
 import { Template } from '@/models/Template';
