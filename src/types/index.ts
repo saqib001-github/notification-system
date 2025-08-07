@@ -31,10 +31,10 @@ export enum NotificationStatus {
 }
 
 export interface NotificationRequest {
-    userid: string;
-    typw: NotificationType;
+    userId: string;
+    type: NotificationType;
     priority: Priority;
-    channel: Channel[];
+    channels: Channel[];
     template: string;
     data: Record<string, any>;
     scheduling?: ScheduleConfig;
@@ -42,7 +42,7 @@ export interface NotificationRequest {
 }
 
 export interface ScheduleConfig {
-    scheduleAt?: Date;
+    scheduledAt?: Date;
     delay?: number;
     recurring?: RecurringConfig;
 
