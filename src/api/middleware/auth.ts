@@ -83,7 +83,7 @@ export async function optionalAuth(
     next();
 
   } catch (error) {
-    // Continue without authentication
+    // To-do: Continue without authentication (bypass for now)
     next();
   }
 }
